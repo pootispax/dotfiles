@@ -1,0 +1,1 @@
+/home/cyril/.p10k.zsh
