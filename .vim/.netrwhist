@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/cyril/Documents/FAC/LICENCE-3/Semestre 6/MQ1/Latex'
+let g:netrw_dirhist_6='/home/cyril/Documents/FAC'
+let g:netrw_dirhist_5='/home/cyril/Documents/FAC/LICENCE-3'
+let g:netrw_dirhist_4='/home/cyril/Documents/FAC/LICENCE-3/Semestre 6'
+let g:netrw_dirhist_3='/home/cyril/Documents/FAC/latex-scripts'
+let g:netrw_dirhist_2='/home/cyril/Documents/FAC/master-1/semester-7/material-physics'
+let g:netrw_dirhist_1='/home/cyril/Documents/FAC/master-1/semester-7/fortran-and-scientific-communication'

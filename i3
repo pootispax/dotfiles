@@ -1,1 +1,0 @@
-/home/cyril/.config/i3
