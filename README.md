@@ -6,9 +6,17 @@ Running on Manjaro Linux, an Arch Linux based distro.<br/>
 
 What follows is an explanation of each file/folder and where to put them.<br/>
 
+## dunst/
+This folder contains the configuration for dunst.<br/>
+It goes in *~/.config/*<br/>
+
 ## i3/
 This folder contains the configuration for i3-gaps, including the startup applications and swallow containers.<br/>
 It goes in *~/.config/*<br/>
+
+## inkskape/, inkscape-figures/ and inkscape-shortcut-manager/
+These 3 folders contain the configuration for inkscape along with some scripts written by [Gilles Castel](https://castel.dev/post/lecture-notes-2/) to use inkscape for note taking during lectures.<br/>
+They go in *~/.config/*<br/>
 
 ## .oh-my-zsh/
 This folder contains the configuration of the oh-my-zsh plugin.<br/>
@@ -31,17 +39,13 @@ It goes in *~/.config/*<br/>
 This folder contains the configuration files and scripts for polybar.<br/>
 It goes in *~/.config/*<br/>
 
+## redshift/
+This folder contains the configuration files for redshift.<br/>
+It goes in *~/.config/*<br/>
+
 ## rofi/
 This folder contains the configuration for rofi-launcher.<br/>
 It goes in *~/.config/*<br/>
-
-## .vim/
-This folder contains vim plugins.<br/>
-It goes in *~/*<br/>
-
-## .vimrc
-This file contains the configuration for vim.<br/>
-It goes in *~/*<br/>
 
 ## .zshrc
 This file contains the configuration of zsh.<br/>
