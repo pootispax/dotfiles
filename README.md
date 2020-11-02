@@ -18,14 +18,14 @@ It goes in *~/.config/*<br/>
 These 3 folders contain the configuration for inkscape along with some scripts written by [Gilles Castel](https://castel.dev/post/lecture-notes-2/) to use inkscape for note taking during lectures.<br/>
 They go in *~/.config/*<br/>
 
-## .oh-my-zsh/
-This folder contains the configuration of the oh-my-zsh plugin.<br/>
-It goes in *~/*<br/>
-
 ## latex-scripts
 This folder contains many configuration for taking notes with latex during lectures.<br/>
 It has no default path, it is composed of python scripts so put it where you want.<br/>
 I would like to thank [Gilles Castel](https://castel.dev/post/lecture-notes-1/)  who created all these files, I edited them a bit for them to work on my system.
+
+## .oh-my-zsh/
+This folder contains the configuration of the oh-my-zsh plugin.<br/>
+It goes in *~/*<br/>
 
 ## .p10k.zsh
 This file contains the configuration for the Powerlvl10k theme of oh-my-zsh.<br/>
