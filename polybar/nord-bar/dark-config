@@ -38,7 +38,8 @@ enable-ipc = true
 [bar/nord-top]
 inherit = bar/base
 
-module-margin = 1
+padding = 4 
+module-margin = 2 
 
 font-0 = WenQuanYiMicroHei:size=8
 font-1 = FontAwesome5FreeSolid:pixelsize=8;1
