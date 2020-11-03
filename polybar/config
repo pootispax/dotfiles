@@ -84,20 +84,31 @@ modules-center = i3
 [bar/window]
 inherit = bar/base
 
-width = 40%
+width = 38%
 offset-x = 11%
 
 modules-center = xwindow
 
 ;==========================================================
 
+[bar/netw]
+inherit = bar/base
+
+background = ${colors.color1}
+
+width = 14%
+offset-x = 51%
+
+modules-center = wlan
+
+;==========================================================
+
 [bar/tray]
 inherit = bar/base
 
-width = 44%
-offset-x = 55%
+width = 32%
+offset-x = 67%
 
-modules-left = wlan
 modules-center = temperature pulseaudio battery
 modules-right = date
 
@@ -105,17 +116,17 @@ modules-right = date
 ;=================================================================
 ;
 ;   ███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗██╗     ███████╗███████╗
-:   ████╗ ████║██╔═══██╗██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
-:   ██╔████╔██║██║   ██║██║  ██║██║   ██║██║     █████╗  ███████╗
-:   ██║╚██╔╝██║██║   ██║██║  ██║██║   ██║██║     ██╔══╝  ╚════██║
-:   ██║ ╚═╝ ██║╚██████╔╝██████╔╝╚██████╔╝███████╗███████╗███████║
-:   ╚═╝     ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝
+;   ████╗ ████║██╔═══██╗██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
+;   ██╔████╔██║██║   ██║██║  ██║██║   ██║██║     █████╗  ███████╗
+;   ██║╚██╔╝██║██║   ██║██║  ██║██║   ██║██║     ██╔══╝  ╚════██║
+;   ██║ ╚═╝ ██║╚██████╔╝██████╔╝╚██████╔╝███████╗███████╗███████║
+;   ╚═╝     ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝
 ;                                                             
 ;=================================================================
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:60:...%
+label = %title:0:80:...%
 
 ;==========================================================
 
@@ -226,6 +237,7 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
+label-charging = %percentage%%
 
 format-discharging = <ramp-capacity> <label-discharging>
 ramp-capacity-0 = 
@@ -238,8 +250,9 @@ ramp-capacity-1-foreground = ${colors.foreground}
 ramp-capacity-2-foreground = ${colors.foreground}
 ramp-capacity-3-foreground = ${colors.foreground}
 ramp-capacity-4-foreground = ${colors.foreground}
+label-discharging = %percentage%%
 
-label-full = 
+label-full =  100%
 label-full-foreground = ${colors.foreground}
 
 ;==========================================================

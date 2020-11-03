@@ -10,12 +10,14 @@ if type "xrandr"; then
     for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
         MONITOR=$m polybar -rq ws &
         MONITOR=$m polybar -rq window &
+        MONITOR=$m polybar -rq netw &
         MONITOR=$m polybar -rq tray &
 
     done
 else
     polybar -rq ws &
     polybar -rq window &
+    polybar -rq netw &
     polybar -rq tray &
 fi
 
