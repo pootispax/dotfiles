@@ -38,6 +38,7 @@ It goes in *~/.config/*<br/>
 ## polybar/
 This folder contains the configuration files and scripts for polybar.<br/>
 It goes in *~/.config/*<br/>
+Needed fonts : **FontAwesome5FreeSolid, FontAwesome5FreeRegular, FontAwesome5Brands, FiraCodeRegular**.<br/>
 
 ## redshift/
 This folder contains the configuration files for redshift.<br/>
