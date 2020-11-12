@@ -109,4 +109,5 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Aliases
-alias latcomp="latexmk -f -pdf --shell-escape"
+alias luacomp="latexmk -f -lualatex --shell-escape"
+alias btop="sudo bpytop"
