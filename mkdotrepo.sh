@@ -21,7 +21,6 @@ cp -r ~/.config/i3 user/.config/
 cp -r ~/.config/polybar user/.config/
 cp -r ~/.config/redshift user/.config/
 cp -r ~/.config/rofi user/.config/
-cp -r ~/.config/sublime-text-3 user/.config/
 cp -r ~/.oh-my-zsh user/
 cp -r ~/.zsh user/
 cp ~/.xbindkeysrc user/
