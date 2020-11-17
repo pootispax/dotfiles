@@ -13,7 +13,6 @@ mkdir -p system/gdm
 # user
 cp -r ~/.config/autorandr user/.config/
 cp -r ~/.config/bpytop user/.config/
-cp -r ~/.config/discord user/.config/
 cp -r ~/.config/dunst user/.config/
 cp -r ~/.config/flameshot user/.config/
 cp -r ~/.config/gtk-2.0 user/.config/
