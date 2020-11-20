@@ -88,6 +88,16 @@
 "flameshot gui &"
   Print
 
+# University setup
+"python3 /home/cyril/Documents/FAC/SCR/rofi-courses.py"
+    Alt + C
+
+"python3 /home/cyril/Documents/FAC/SCR/rofi-lectures.py"
+    Alt + L
+
+"python3 /home/cyril/Documents/FAC/SCR/rofi-lectures-view.py"
+    Alt + O
+
 ##################################
 # End of xbindkeys configuration #
 ##################################

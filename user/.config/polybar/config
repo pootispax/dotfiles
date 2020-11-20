@@ -41,7 +41,7 @@ fixed-center = true
 override-redirect = true
 
 font-0 = DejaVuSansMono:10;2
-font-1 = FontAwesome5FreeSolid:pixelsize=13;2
+font-1 = MesloLGS:pixelsize=13;2
 font-2 = FontAwesome5FreeRegular:pixelsize=13;2
 font-3 = FontAwesome5Brands:pixelsize=13;2
 font-4 = FiraCodeRegular:pixelsize=10;2
