@@ -41,10 +41,11 @@ fixed-center = true
 override-redirect = true
 
 font-0 = DejaVuSansMono:10;2
-font-1 = MesloLGS:pixelsize=13;2
-font-2 = FontAwesome5FreeRegular:pixelsize=13;2
-font-3 = FontAwesome5Brands:pixelsize=13;2
-font-4 = FiraCodeRegular:pixelsize=10;2
+font-1 = MesloLGS:pixelsize=10;2
+font-2 = FontAwesome5FreeSolid:pixelsize=13;2
+font-3 = FontAwesome5FreeRegular:pixelsize=13;2
+font-4 = FontAwesome5Brands:pixelsize=13;2
+
 
 height = 40
 offset-x = 1%
@@ -225,7 +226,7 @@ label-padding = 2
 [module/battery]
 type = internal/battery
 
-full-at = 95
+full-at = 98
 
 ;battery = ${config.battery-bat}
 ;adapter = ${config.battery-adp}

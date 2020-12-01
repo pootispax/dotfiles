@@ -38,7 +38,7 @@ git add .
 
 echo "Choose a commit message"
 read message
-git commit -m $message
+git commit -m "$message"
 git push
 
 echo "Files saved"

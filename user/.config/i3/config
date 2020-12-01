@@ -240,6 +240,7 @@ for_window [class       = "Indicator-stickynotes"] move to scratchpad
 # No border for..
 # for_window [class       = "Firefox"] border pixel 0
 
+for_window [class       = "firefox"] move window to workspace $ws1
 for_window [class       = "discord"] move window to workspace $ws8
 for_window [class       = "chromium"] move window to workspace $ws1
 for_window [class		= "Thunderbird"] move window to workspace $ws9
