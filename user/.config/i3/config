@@ -246,7 +246,7 @@ for_window [class       = "chromium"] move window to workspace $ws1
 for_window [class		= "Thunderbird"] move window to workspace $ws9
 
 # Wallpaper setup
-exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/kindred.jpg /home/cyril/.config/i3/wallpapers/kindred.jpg 
+exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/digital-landscape.png /home/cyril/.config/i3/wallpapers/digital-landscape.png 
 exec --no-startup-id picom --experimental-backends -b
 
 # Window startup shortcuts

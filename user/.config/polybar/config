@@ -17,9 +17,9 @@
 ;==========================================================
 
 [colors]
-foreground = BBBBBB
-background = 121212
-color1 = 686AD7
+foreground = e3dbc8
+background = 211720
+color1 = BA9382
 color2 = 0
 color3 = 0
 

@@ -85,7 +85,7 @@
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
    XF86AudioMute
 
-"flameshot gui &"
+"flameshot gui"
   Print
 
 # University setup
