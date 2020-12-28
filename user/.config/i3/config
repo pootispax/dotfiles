@@ -22,7 +22,7 @@ title_align center
 
 gaps inner 10
 gaps outer 0
-gaps top 60
+gaps top 0
 gaps bottom 0
 
 for_window [class="^.*"] border pixel 0
@@ -72,10 +72,10 @@ bindsym --whole-window $mod+button2 floating toggle
 bindsym $mod+Return exec konsole
 
 # Rofi drun menu
-bindsym $mod+d exec "rofi -show drun"
+bindsym $mod+d exec ~/.config/polybar/hack/scripts/launcher.sh &
 
 # Power menu
-bindsym $mod+Shift+e exec "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu"
+bindsym $mod+Shift+e exec ~/.config/polybar/hack/scripts/powermenu.sh &
 
 # Network manager
 bindsym $mod+shift+n exec "networkmanager_dmenu"
@@ -93,7 +93,7 @@ bindsym $mod+n [class   = "Indicator-stickynotes"] scratchpad show
 # bindsym $mod+c exec --no-startup-id sh -c "subl ~/Documents/Workspaces/mydotfiles_workspace.code-workspace"
 
 # Lock screen
-bindsym $mod+l exec "i3lock -t -i /home/cyril/.config/i3/wallpapers/sf-kindred.png"
+bindsym $mod+l exec "i3lock -t -i /home/cyril/.config/i3/wallpapers/hollow-knight.jpg"
 
 #
 # Workspace Navigation
@@ -164,16 +164,16 @@ bindsym $mod+f fullscreen toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Web Browser"
+set $ws1 "1:Browser"
 set $ws2 "2:Work"
-set $ws3 "3:Desktop 3"
-set $ws4 "4:Desktop 4"
-set $ws5 "5:Desktop 5"
-set $ws6 "6:Desktop 6"
-set $ws7 "7:Desktop 7"
+set $ws3 "3:WS3"
+set $ws4 "4:WS4"
+set $ws5 "5:WS5"
+set $ws6 "6:WS6"
+set $ws7 "7:WS7"
 set $ws8 "8:Discord"
 set $ws9 "9:Thunderbird"
-set $ws10 "10:Terminal"
+set $ws0 "0:Terminal"
 
 # Switch to workspace
 bindsym $mod+ampersand workspace number $ws1
@@ -185,7 +185,7 @@ bindsym $mod+minus workspace number $ws6
 bindsym $mod+egrave workspace number $ws7
 bindsym $mod+underscore workspace number $ws8
 bindsym $mod+ccedilla workspace number $ws9
-bindsym $mod+agrave workspace number $ws10
+bindsym $mod+agrave workspace number $ws0
 
 # Move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace number $ws1
@@ -197,7 +197,7 @@ bindsym $mod+Shift+minus move container to workspace number $ws6
 bindsym $mod+Shift+egrave move container to workspace number $ws7
 bindsym $mod+Shift+underscore move container to workspace number $ws8
 bindsym $mod+Shift+ccedilla move container to workspace number $ws9
-bindsym $mod+Shift+agrave move container to workspace number $ws10
+bindsym $mod+Shift+agrave move container to workspace number $ws0
 
 #Gap size increase/decrease bind mode
 set $mode_gaps Gaps: [ UP ] increase, or [ DOWN ] decrease
@@ -246,7 +246,7 @@ for_window [class       = "chromium"] move window to workspace $ws1
 for_window [class		= "Thunderbird"] move window to workspace $ws9
 
 # Wallpaper setup
-exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/digital-landscape.png /home/cyril/.config/i3/wallpapers/digital-landscape.png 
+exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/hollow-knight.jpg /home/cyril/.config/i3/wallpapers/hollow-knight.jpg
 exec --no-startup-id picom --experimental-backends -b
 
 # Window startup shortcuts
@@ -265,7 +265,8 @@ bindsym $mod+shift+o exec okular
 exec --no-startup-id indicator-stickynotes
 
 # Launch polybar (taskbar)
-exec --no-startup-id ~/.config/polybar/launch.sh &
+exec --no-startup-id ~/.config/polybar/launch.sh --hack &
+exec --no-startup-id ~/.config/polybar/hack/scripts/pywal.sh /home/cyril/.config/i3/wallpapers/hollow-knight.jpg &
 
 # Launch dunst (notify system)
 exec --no-startup-id dunst
