@@ -28,7 +28,7 @@ gaps bottom 0
 for_window [class="^.*"] border pixel 0
 
 # smart_borders on
-# smart_gaps on
+smart_gaps on
 
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
@@ -217,6 +217,7 @@ mode "$mode_gaps" {
 #   |_|  |_|___|_|\_|___|
 #
 
+
 # Shortcut for audio control
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -240,9 +241,7 @@ for_window [class       = "Indicator-stickynotes"] move to scratchpad
 # No border for..
 # for_window [class       = "Firefox"] border pixel 0
 
-for_window [class       = "firefox"] move window to workspace $ws1
 for_window [class       = "discord"] move window to workspace $ws8
-for_window [class       = "chromium"] move window to workspace $ws1
 for_window [class		= "Thunderbird"] move window to workspace $ws9
 
 # Wallpaper setup
@@ -250,8 +249,8 @@ exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/hollow-kni
 exec --no-startup-id picom --experimental-backends -b
 
 # Window startup shortcuts
-bindsym $mod+Shift+f exec chromium
-bindsym $mod+shift+s "exec subl -n"
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+shift+s exec subl
 bindsym $mod+shift+o exec okular
 
 
@@ -266,7 +265,6 @@ exec --no-startup-id indicator-stickynotes
 
 # Launch polybar (taskbar)
 exec --no-startup-id ~/.config/polybar/launch.sh --hack &
-exec --no-startup-id ~/.config/polybar/hack/scripts/pywal.sh /home/cyril/.config/i3/wallpapers/hollow-knight.jpg &
 
 # Launch dunst (notify system)
 exec --no-startup-id dunst
