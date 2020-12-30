@@ -80,9 +80,6 @@ bindsym $mod+Shift+e exec ~/.config/polybar/hack/scripts/powermenu.sh &
 # Network manager
 bindsym $mod+shift+n exec "networkmanager_dmenu"
 
-# Take a screenshot
-# bindsym Print exec "scrot '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures/Screenshots/'"
-
 # Reset desktop UI components (Polybar, Compton etc)
 # bindsym $mod+Shift+t exec --no-startup-id sh -c "desktop-reset.sh"
 
@@ -90,10 +87,13 @@ bindsym $mod+shift+n exec "networkmanager_dmenu"
 bindsym $mod+n [class   = "Indicator-stickynotes"] scratchpad show
 
 # Shortcut to open dotfiles workspace
-# bindsym $mod+c exec --no-startup-id sh -c "subl ~/Documents/Workspaces/mydotfiles_workspace.code-workspace"
+bindsym $mod+p exec --no-startup-id sh -c "subl --command "close_project" && sleep 0.2 && subl -n ~/Documents/Workspaces/config.sublime-project"
+
+# Shortcut to open courses workspace
+bindsym $mod+c exec --no-startup-id sh -c "subl --command "close_project" && sleep 0.2 && subl -n ~/Documents/Workspaces/semester-7.sublime-project"
 
 # Lock screen
-bindsym $mod+l exec "i3lock -t -i /home/cyril/.config/i3/wallpapers/hollow-knight.jpg"
+bindsym $mod+l exec "i3lock -t -i ~/.config/i3/wallpapers/hollow-knight.png"
 
 #
 # Workspace Navigation
