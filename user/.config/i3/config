@@ -20,14 +20,14 @@ for_window [class   = ".*"] title_format "%title  ⋯  %class"
 title_align center
 
 
-gaps inner 10
+gaps inner 6
 gaps outer 0
 gaps top 0
 gaps bottom 0
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
-# smart_borders on
+smart_borders on
 smart_gaps on
 
 # Set colors from Xresources
@@ -58,12 +58,17 @@ client.background       $bg
 set $mod Mod4
 floating_modifier Mod4
 focus_follows_mouse no
+mouse_warping none
 
 #
 # Mouse related stuff
 #
 # The right button toggles floating
 bindsym --whole-window $mod+button2 floating toggle
+
+# Gaps on/off for the current workspace
+bindsym $mod+t gaps inner current set 0
+bindsym $mod+shift+t gaps inner current set 10
 
 #
 # Launch Shortcuts
@@ -233,7 +238,7 @@ for_window [class   = "Lxappearance"] floating enable
 for_window [title   = "\bopencvimage\b"] floating enable
 for_window [class   = "Dolphin"] floating enable resize set 921 897
 for_window [title   = "Message Filters"] floating enable
-for_window [title   = "Write: (no subject) - Thunderbird"] floating enable
+for_window [class   = "Matplotlib"] floating enable
 
 # Move certain apps to the scratchpad
 for_window [class       = "Indicator-stickynotes"] move to scratchpad
@@ -241,12 +246,15 @@ for_window [class       = "Indicator-stickynotes"] move to scratchpad
 # No border for..
 # for_window [class       = "Firefox"] border pixel 0
 
+for_window [class       = "flameshot"] floating enable
+for_window [class       = "vlc"] floating enable resize set 480 360
+for_window [class       = "firefox"] move window to workspace $ws1
 for_window [class       = "discord"] move window to workspace $ws8
 for_window [class		= "Thunderbird"] move window to workspace $ws9
 
 # Wallpaper setup
-exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/hollow-knight.jpg /home/cyril/.config/i3/wallpapers/hollow-knight.jpg
-exec --no-startup-id picom --experimental-backends -b
+exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/zenyatta.jpg /home/cyril/.config/i3/wallpapers/zenyatta.jpg
+exec --no-startup-id picom -b
 
 # Window startup shortcuts
 bindsym $mod+Shift+f exec firefox

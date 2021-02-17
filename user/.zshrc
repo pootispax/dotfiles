@@ -13,6 +13,9 @@ export ZSH="/home/cyril/.oh-my-zsh"
 
 export QT_STYLE_OVERRIDE=kvantum
 
+# Path to pip installations
+export PATH=$PATH:/home/cyril/.local/bin
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
