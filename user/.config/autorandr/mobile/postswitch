@@ -3,5 +3,4 @@
 sleep 3
 sh /home/cyril/.config/polybar/launch.sh --hack&
 sleep 1
-xsetwacom set "Wacom Intuos BT M Pen stylus" MapToOutput eDP1
 notify-send autorandr "Mobile profile loaded"

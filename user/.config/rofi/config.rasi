@@ -11,7 +11,6 @@ configuration {
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
-	@import "~/.cache/wal/colors-rofi-dark";
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "zsh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -56,7 +55,7 @@ configuration {
 /*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
-  theme: "/home/cyril/.config/polybar/hack/scripts/rofi/styles.rasi";
+theme: "/home/cyril/.config/polybar/hack/scripts/rofi/styles.rasi";
 /*	color-normal: ;*/
 /*	color-urgent: ;*/
 /*	color-active: ;*/

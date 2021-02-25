@@ -89,16 +89,16 @@ bindsym $mod+shift+n exec "networkmanager_dmenu"
 # bindsym $mod+Shift+t exec --no-startup-id sh -c "desktop-reset.sh"
 
 # Show scratchpad app(s)
-bindsym $mod+n [class   = "Indicator-stickynotes"] scratchpad show
+bindsym $mod+n scratchpad show
 
 # Shortcut to open dotfiles workspace
-bindsym $mod+p exec --no-startup-id sh -c "subl --command "close_project" && sleep 0.2 && subl -n ~/Documents/Workspaces/config.sublime-project"
+# bindsym $mod+p exec --no-startup-id sh -c "subl --command "close_project" && sleep 0.2 && subl -n ~/Documents/Workspaces/config.sublime-project"
 
 # Shortcut to open courses workspace
-bindsym $mod+c exec --no-startup-id sh -c "subl --command "close_project" && sleep 0.2 && subl -n ~/Documents/Workspaces/semester-7.sublime-project"
+# bindsym $mod+c exec --no-startup-id sh -c "subl --command "close_project" && sleep 0.2 && subl -n ~/Documents/Workspaces/semester-7.sublime-project"
 
 # Lock screen
-bindsym $mod+l exec "i3lock -t -i ~/.config/i3/wallpapers/hollow-knight.png"
+bindsym $mod+l exec "i3lock -t -i ~/.config/i3/wallpapers/mask-hand-cropped.png"
 
 #
 # Workspace Navigation
@@ -108,9 +108,6 @@ bindsym $mod+Control+Left workspace prev
 
 # Move to workspace to the right
 bindsym $mod+Control+Right workspace next
-
-# Move to an empty workspace
-bindsym $mod+Control+Down exec --no-startup-id "~/.config/rofi/scripts/i3_empty_workspace.sh"
 
 #
 # i3 base stuff 
@@ -253,7 +250,7 @@ for_window [class       = "discord"] move window to workspace $ws8
 for_window [class		= "Thunderbird"] move window to workspace $ws9
 
 # Wallpaper setup
-exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/zenyatta.jpg /home/cyril/.config/i3/wallpapers/zenyatta.jpg
+exec --no-startup-id feh --bg-scale /home/cyril/.config/i3/wallpapers/magician.jpg /home/cyril/.config/i3/wallpapers/magician.jpg
 exec --no-startup-id picom -b
 
 # Window startup shortcuts
@@ -282,3 +279,6 @@ exec --no-startup-id redshift &
 
 # Launch xbindkeys (advanced shortcuts)
 exec --no-startup-id "xbindkeys"
+
+# Restore pywal colors
+exec --no-startup-id wal -R

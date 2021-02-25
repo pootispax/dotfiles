@@ -12,8 +12,15 @@ launch_bar() {
 
 	# Launch the bar
 	if [[ "$style" == "hack" || "$style" == "cuts" ]]; then
-		polybar -q top -c "$dir/$style/config.ini" &
-		polybar -q bottom -c "$dir/$style/config.ini" &
+		if type "xrandr"; then
+    		for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+				MONITOR=$m polybar -q top -c "$dir/$style/config.ini" &
+				MONITOR=$m polybar -q bottom -c "$dir/$style/config.ini" &
+			done
+		else
+			polybar -q top -c "$dir/$style/config.ini" &
+			polybar -q bottom -c "$dir/$style/config.ini" &
+		fi
 	elif [[ "$style" == "pwidgets" ]]; then
 		bash "$dir"/pwidgets/launch.sh --main
 	else
