@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sleep 3
+sh /home/cyril/.config/polybar/launch.sh --hack&
+sleep 1
+notify-send autorandr "3 screens profile loaded"

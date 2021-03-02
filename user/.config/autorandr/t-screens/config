@@ -1,7 +1,5 @@
 output DP1
 off
-output DP1-2
-off
 output DP1-3
 off
 output DP2
@@ -22,4 +20,10 @@ crtc 1
 gamma 1.0:0.909:0.909
 mode 1920x1080
 pos 1920x0
+rate 60.00
+output DP1-2
+crtc 2
+gamma 1.0:0.909:0.909
+mode 1920x1080
+pos 3840x0
 rate 60.00

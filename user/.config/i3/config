@@ -241,6 +241,7 @@ for_window [title   = "\bopencvimage\b"] floating enable
 for_window [class   = "Dolphin"] floating enable resize set 921 897
 for_window [title   = "Message Filters"] floating enable
 for_window [class   = "Matplotlib"] floating enable
+for_window [class   = "matplotlib"] floating enable
 
 # Move certain apps to the scratchpad
 for_window [class       = "Indicator-stickynotes"] move to scratchpad
