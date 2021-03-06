@@ -242,6 +242,8 @@ for_window [class   = "Dolphin"] floating enable resize set 921 897
 for_window [title   = "Message Filters"] floating enable
 for_window [class   = "Matplotlib"] floating enable
 for_window [class   = "matplotlib"] floating enable
+for_window [class   = "nomacs"] floating enable
+for_window [class   = "Image Lounge"] floating enable
 
 # Move certain apps to the scratchpad
 for_window [class       = "Indicator-stickynotes"] move to scratchpad
@@ -288,3 +290,6 @@ exec --no-startup-id "xbindkeys"
 
 # Restore pywal colors
 exec --no-startup-id wal -R
+
+# Load dockd daemon
+exec --no-startup-id dockd --daemon
